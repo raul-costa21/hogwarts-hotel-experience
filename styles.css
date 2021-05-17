@@ -389,7 +389,7 @@ p span {
   }
 
   a {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
   }
 
   /* Home */
@@ -513,11 +513,7 @@ p span {
   body {
     font-size: 1.428rem;
   }
-
-  a {
-    font-size: 1.25rem;
-  }
-
+  
   .activities-title {
     font-size: 3.125rem;
   }
