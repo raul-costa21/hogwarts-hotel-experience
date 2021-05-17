@@ -1,0 +1,630 @@
+/* Special font */
+@font-face {
+  font-family: "harry_pregular";
+  src: url("font/harryp__-webfont.woff2") format("woff2"), url("font/harryp__-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h4 {
+  font-family: harry_pregular;
+  font-size: 8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  font-family: harry_pregular;
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: rgba(0, 0, 0, 1);
+  overflow-x: hidden;
+}
+
+/* Home */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/hogwarts.jpg);
+  background-size: cover;
+  border-bottom-right-radius: 1%;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar-custom {
+  font-size: 1.5rem;
+  margin-right: 5%;
+}
+
+.navbar-custom li {
+  padding-left: 3%;
+}
+
+.home-content {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.home-titles {
+  display: none;
+  color: #f0b31b;
+  margin-top: 10%;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+/* Activities */
+#activities {
+  padding-top: 5%;
+  background-color: rgba(255, 222, 138, 0.2);
+}
+
+.activities-title {
+  text-align: center;
+  margin-bottom: 8%;
+  font-size: 5rem;
+}
+
+.activities-blocks {
+  margin: auto auto 7%;
+}
+
+#train {
+  margin-bottom: 0;
+  padding-bottom: 7%;
+}
+
+.activities-img {
+  width: 80%;
+  border-radius: 5%;
+}
+
+.activities-text {
+  width: 35%;
+}
+
+.activities-text h4 {
+  font-size: 3.5rem;
+  color: #f0b31b;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+.activities-text p {
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+
+#testimonials {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #f0b31b;
+  position: relative;
+}
+
+.testimonials-text {
+  font-size: 2.8rem;
+  width: 50%;
+  margin: auto auto 5%;
+  text-align: center;
+  position: relative;
+  left: 0;
+}
+
+#testimonials h4 {
+  font-size: 2rem;
+  padding-left: 2%;
+}
+
+.testimonials-img {
+  width: 15%;
+  border-radius: 5%;
+  border: ridge 1.3rem #f0b31b;
+  animation-name: anime;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes anime {
+  0% {
+    left: -25rem;
+    top: -16rem;
+  }
+  15% {
+    top: 0;
+    left: -25rem;
+    transform: rotate(0);
+  }
+  30% {
+    left: -20rem;
+    transform: rotate(90deg);
+  }
+
+  45% {
+    left: -15rem;
+    transform: rotate(180deg);
+  }
+
+  60% {
+    left: -10rem;
+    transform: rotate(270deg);
+  }
+
+  75% {
+    left: -5rem;
+    transform: rotate(360deg);
+  }
+
+  90% {
+    left: 0;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+.arrow-img {
+  width: 1.5rem;
+  height: 2rem;
+  position: absolute;
+}
+
+.arrow-img:hover {
+  cursor: pointer;
+}
+
+.arrow-img-1 {
+  transform: scaleX(-1);
+  top: 45%;
+  left: 5%;
+}
+
+.arrow-img-2 {
+  top: 45%;
+  right: 5%;
+}
+
+.no-display {
+  display: none;
+}
+
+.test-anime-1-left {
+  transition-duration: 0.5s;
+  transform: skewY(5deg);
+}
+
+.test-anime-2-left {
+  transition-duration: 1s;
+  left: 100%;
+}
+
+.test-anime-1-right {
+  transition-duration: 0.5s;
+  transform: skewY(-5deg);
+}
+
+.test-anime-2-right {
+  transition-duration: 1s;
+  left: -100%;
+}
+
+/* Form */
+#form {
+  padding-bottom: 5%;
+  padding-top: 7%;
+  background-color: rgba(255, 222, 138, 0.2);
+}
+
+#form h2 {
+  margin-bottom: 0%;
+}
+
+/* Form - copy form */
+.copy_form {
+  font-family: harry_pregular;
+  font-size: 1.7rem;
+  padding: 3%;
+  background-image: url("images/old_paper.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 6.25rem;
+}
+
+.hogwarts-symbol {
+  display: block;
+  width: 15%;
+  margin: 9% auto 2%;
+  text-align: center;
+}
+
+.signature {
+  width: 12%;
+  margin-left: 12%;
+  margin-bottom: 2%;
+  display: block;
+}
+
+.copy_form p {
+  margin-bottom: 3%;
+  text-indent: 6%;
+}
+
+.copy_form p:nth-child(4),
+.copy_form p:nth-child(5) {
+  margin-bottom: 0;
+}
+
+p span {
+  color: #f0b31b;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+/* Form - User form */
+
+.user-form {
+  margin-top: 8rem;
+}
+
+.user-form h3 {
+  font-size: 1.9rem;
+  margin-bottom: 8%;
+}
+
+#fName {
+  margin-bottom: 5%;
+}
+
+.u-f-checkboxes {
+  margin: 10% 0;
+}
+
+.u-f-checkboxes div {
+  display: block;
+}
+
+.u-f-select {
+  margin: 10% 0;
+}
+
+.u-f-buttom {
+  margin: 10% 0;
+}
+
+.buttom {
+  background-color: #f0b31b;
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus,
+#data1:focus,
+#data2:focus,
+.buttom:focus {
+  outline: none;
+  box-shadow: none;
+  border: #f0b31b 2px solid;
+}
+
+.form-check-input:checked {
+  background-color: #f0b31b;
+  border: #f0b31b 1px solid;
+}
+
+#data1 {
+  margin-left: 2.7%;
+}
+
+.div_date2 {
+  margin-top: 0.3rem;
+}
+
+/* Contacts */
+#contacts {
+  background-color: #f0b31b;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.contacts-text {
+  margin-left: 1%;
+  display: inline;
+}
+
+.r1 i {
+  margin-right: 1.2%;
+}
+.r1 p {
+  margin-right: 1%;
+  margin-left: 0%;
+}
+
+.r3 {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.r3 i {
+  margin: auto 1%;
+}
+
+.footer {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 320px) and (max-width: 991px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1.313rem;
+  }
+
+  a {
+    font-size: 0.875rem;
+  }
+
+  /* Home */
+  .navbar-toggler {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .navbar-custom {
+    margin-right: 3%;
+    text-align: center;
+  }
+
+  .home-content {
+    min-height: 50vh;
+  }
+
+  /* Activities */
+
+  .activities-title {
+    font-size: 2.188rem;
+  }
+
+  .activities-img {
+    display: none;
+  }
+
+  .activities-text {
+    width: 100%;
+  }
+
+  .activities-text h4 {
+    font-size: 1.531rem;
+  }
+
+  .activities-text p {
+    font-size: 1rem;
+  }
+
+  /* Testimonials */
+
+  .testimonials-text {
+    font-size: 1.428rem;
+    width: 80%;
+  }
+
+  #testimonials h4 {
+    font-size: 1rem;
+  }
+
+  .testimonials-img {
+    display: none;
+  }
+
+  .arrow-img {
+    width: 1rem;
+    height: 1.5rem;
+  }
+
+  /* Form */
+
+  .copy_form {
+    display: none;
+  }
+
+  .user-form {
+    margin-top: 2rem;
+  }
+
+  .user-form h3 {
+    font-size: 1.531rem;
+  }
+
+  .div_date1 {
+    margin-top: 1.3rem;
+  }
+
+  #data1 {
+    margin-left: 0.8rem;
+  }
+
+  .div_date2 {
+    margin-top: 0.3rem;
+  }
+
+  #data2 {
+    margin-left: 0.3rem;
+  }
+
+  .u-f-buttom {
+    margin-top: 15%;
+  }
+
+  .u-f-buttom input {
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Contacts */
+
+  .r1 p {
+    margin-right: 5%;
+  }
+
+  .fa-2x {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (min-width: 482px) and (max-width: 991px) {
+  h1,
+  h2,
+  h4 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 1.428rem;
+  }
+
+  a {
+    font-size: 1.25rem;
+  }
+
+  .activities-title {
+    font-size: 3.125rem;
+  }
+
+  .activities-text h4 {
+    font-size: 2.187rem;
+  }
+
+  .activities-text p {
+    font-size: 1.428rem;
+  }
+
+  .testimonials-text {
+    font-size: 1.9rem;
+  }
+
+  #testimonials h4 {
+    font-size: 1.428rem;
+  }
+
+  .user-form h3 {
+    font-size: 2.187rem;
+  }
+
+  .u-f-buttom input {
+    font-size: 1.428rem;
+  }
+
+  .div_date1 {
+    margin-top: 1.5rem;
+  }
+
+  #data1 {
+    margin-left: 1.1rem;
+  }
+
+  .div_date2 {
+    margin-top: 0.5rem;
+  }
+
+  #data2 {
+    margin-left: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .activities-text {
+    width: 60%;
+  }
+
+  .activities-img {
+    width: 80%;
+    border-radius: 5%;
+    height: 9rem;
+  }
+
+  .testimonials-text {
+    font-size: 2.8rem;
+    width: 70%;
+  }
+
+  .testimonials-img {
+    width: 20%;
+  }
+
+  .copy_form {
+    font-size: 1.23rem;
+    margin-left: 1rem;
+  }
+
+  .user-form {
+    width: 40%;
+  }
+
+  .div_date1 {
+    margin-top: 1.3rem;
+  }
+
+  #data1 {
+    margin-left: 0.8rem;
+  }
+  .div_date2 {
+    margin-top: 0.4rem;
+  }
+
+  #data2 {
+    margin-left: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1599px) {
+  .copy_form {
+    font-size: 1.45rem;
+  }
+  .div_date1 {
+    margin-top: 1.6rem;
+  }
+
+  #data1 {
+    margin-left: 0.82rem;
+  }
+
+  .div_date2 {
+    margin-top: 0.5rem;
+  }
+
+  #data2 {
+    margin-left: 0.3rem;
+  }
+}
